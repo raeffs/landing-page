@@ -1,0 +1,1 @@
+addEventListener("fetch",t=>{const c=t.request;"GET"===c.method&&t.respondWith(async function(){const n=fetch(c);t.waitUntil(async function(){const t=(await n).clone(),a=await caches.open("files");await a.put(c,t)}());try{return await n}catch(t){return caches.match(c)}}())});

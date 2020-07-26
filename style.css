@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Fantasque Sans Mono';
+    src: local('Fantasque Sans Mono'), local('Fantasque-Sans-Mono'), url('fonts/FantasqueSansMono-Regular.woff2') format('woff2'), url('fonts/FantasqueSansMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fantasque Sans Mono';
+    src: local('Fantasque Sans Mono'), local('Fantasque-Sans-Mono'), url('fonts/FantasqueSansMono-Bold.woff2') format('woff2'), url('fonts/FantasqueSansMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    color: #404040;
+    background: #f8f8f8;
+    font-family: 'Fantasque Sans Mono', monospace;
+    font-size: 1rem;
+    line-height: 1.25;
+    margin: 0;
+    padding: 10px;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link, header, footer {
+    align-items: center;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    display: block;
+}
+
+h3 {
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+.link {
+    background: #808080;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #f8f8f8;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.link:hover {
+    background: #404040;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    flex: auto;
+    display: block;
+    padding: 5px 0 5px 60px;
+}
+
+h2 {
+    padding: 8px 0;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h1 {
+    padding: 0 0 0 60px;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    float: left;
+}
+
+a img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(279deg) brightness(115%) contrast(95%);
+}
+
+a[href].expanded:hover h2:after {
+    content: '\00A0\2192'
+}
+
+header img {
+    border-radius: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+div {
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    height: auto;
+    clear: both;
+}
+
+a div[data-collapsed="true"] {
+    height: 0;
+    visibility: hidden;
+}
+
+.l:hover, .l.expanded {
+    background: #0077B5;
+}
+
+.g:hover, .g.expanded {
+    background: #24292e;
+}
+
+.i:hover, .i.expanded {
+    background: #E4405F;
+}
+
+.t:hover, .t.expanded {
+    background: #1DA1F2;
+}
+
+.p:hover, .p.expanded {
+    background: #003791;
+}
+
+.n:hover, .n.expanded {
+    background: #E60012;
+}
+
+.f:hover, .f.expanded {
+    background: #1877F2;
+}
+
+.tr:hover, .tr.expanded {
+    background: #ED1C24;
+}
+
+.lf:hover, .lf.expanded {
+    background: #D51007;
+}
+
+.b:hover, .b.expanded {
+    background: #00AEFF;
+}
+
+.s:hover, .s.expanded {
+    background: #171a21;
+}
+
+@media all and (min-width:500px) {
+    body {
+        padding: 50px;
+    }
+    h2 {
+        padding: 5px 0;
+        font-size: 1.5rem;
+    }
+    p {
+        padding: 20px 0 0 60px;
+    }
+}

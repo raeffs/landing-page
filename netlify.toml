@@ -1,0 +1,12 @@
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+
+[[plugins]]
+  package = "netlify-plugin-inline-source"
+  [plugins.inputs]
+    svgAsImage = true
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+  [plugins.inputs.minifierOptions]
+    collapseInlineTagWhitespace = false
