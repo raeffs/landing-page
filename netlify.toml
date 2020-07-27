@@ -10,3 +10,6 @@
   package = "netlify-plugin-minify-html"
   [plugins.inputs.minifierOptions]
     collapseInlineTagWhitespace = false
+
+[[plugins]]
+  package = "netlify-plugin-hashfiles"
