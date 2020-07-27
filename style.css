@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Fantasque Sans Mono';
-    src: local('Fantasque Sans Mono'), local('Fantasque-Sans-Mono'), url('fonts/FantasqueSansMono-Regular.woff2') format('woff2'), url('fonts/FantasqueSansMono-Regular.woff') format('woff');
+    font-family: 'FSM';
+    src: url('fonts/FSM-Regular-subset.woff2') format('woff2'), url('fonts/FSM-Regular-subset.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Fantasque Sans Mono';
-    src: local('Fantasque Sans Mono'), local('Fantasque-Sans-Mono'), url('fonts/FantasqueSansMono-Bold.woff2') format('woff2'), url('fonts/FantasqueSansMono-Bold.woff') format('woff');
+    font-family: 'FSM';
+    src: url('fonts/FSM-Bold-subset.woff2') format('woff2'), url('fonts/FSM-Bold-subset.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
 body {
     color: #404040;
     background: #f8f8f8;
-    font-family: 'Fantasque Sans Mono', monospace;
+    font-family: 'FSM', monospace;
     font-size: 1rem;
     line-height: 1.25;
     margin: 0;
