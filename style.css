@@ -75,6 +75,8 @@ h2 {
 
 h1 {
     padding: 0 0 0 60px;
+    letter-spacing: -0.8px;
+    word-spacing: -5px;
 }
 
 img {
@@ -99,6 +101,7 @@ header img {
 p {
     margin: 0;
     padding: 20px 0 0 0;
+    line-height: 1.5;
 }
 
 div {
