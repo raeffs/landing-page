@@ -13,3 +13,66 @@
 
 [[plugins]]
   package = "netlify-plugin-hashfiles"
+
+# redirect netlify domain (https)
+[[redirects]]
+  from = "https://raeffs.netlify.app/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect netlify domain (http)
+[[redirects]]
+  from = "http://raeffs.netlify.app/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect alternative domain (https)
+[[redirects]]
+  from = "https://raefftec.ch/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect alternative domain (http)
+[[redirects]]
+  from = "http://raefftec.ch/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect alternative domain (https)
+[[redirects]]
+  from = "https://www.raefftec.ch/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect alternative domain (http)
+[[redirects]]
+  from = "http://www.raefftec.ch/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect sub domain (https)
+[[redirects]]
+  from = "https://www.raeffs.dev/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect sub domain (http)
+[[redirects]]
+  from = "http://www.raeffs.dev/*"
+  to = "https://raeffs.dev/:splat"
+  status = 301
+  force = true
+
+# redirect to https
+[[redirects]]
+  from = "http://raeffs.dev/*"
+  to = "https://reaffs.dev/:splat"
+  status = 301
+  force = true
